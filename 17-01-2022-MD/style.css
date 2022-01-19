@@ -54,7 +54,11 @@ input[type=button], input[type=submit] {
 
 input[type=number]{
   width: 80px;
-} 
+}
+
+span{
+  margin-right: 30px;
+}
 
 
 
