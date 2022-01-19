@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algas kalkulators 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Algas kalkulators 2022</h1>
+
+
+
+        <div class="form-row ">
+
+            <div class="input-group">
+                <span>Bruto alga *</span>
+                <input type="number" id="brutto_monthly_salary" name="brutto_monthly_salary" class="form-control"
+                    oninput="validity.valid||(value='');" aria-label="LS_BruttoSalary" value="" min="0" required="">
+                <span class="input-group-text">EUR / mēn</span>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="have_payroll_tax_record_book"
+                        id="have_payroll_tax_record_book1" value="1" checked="">
+                    <label class="form-check-label" for="have_payroll_tax_record_book1">Vai algas grāmatiņa iesniegta?
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <input id="button" type="submit" value="Aprēķināt" onclick="netCalc()">
+
+
+
+
+
+        <div class="net-salary">
+
+            <div class="input-group">
+                <span>Alga uz rokas:</span>
+                <input type="number" id="net_monthly_salary" name="net_monthly_salary" class="" aria-label="" value=""
+                    min="0">
+                <span class="input-group-text">EUR</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
